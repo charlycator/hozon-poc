@@ -1,2 +1,0 @@
-# hozon-poc
-Hozon POC
