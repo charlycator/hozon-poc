@@ -1,42 +1,31 @@
 'use client';
 
-import Image from 'next/image';
-
 import {
   Button,
   Icon,
+  Input,
  } from '@components';
 import {
-  IconAppearance,
   IconSize,
   IconName,
 } from '@enums';
-
-import hozonLogoSrc from '@images/hozon-logo.png';
 
 
 export default function Home() {
 
   const LoginEmailInput = () => (
-    <div className="relative mt-10">
-      <input
-        id="email"
-        name="email"
-        type="text"
-        className="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-cyan-800"
-        placeholder="john@doe.com" />
-      <label
-        htmlFor="email"
-        className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
-          Email address
-      </label>
-    </div>
+    <Input
+      className="relative mt-10"
+      name="email"
+      id="email"
+      label="Email address" />
   );
 
   const LoginLogo = () => (
-    <div className="flex justify-center mt-4 mb-16">
-      <Image src={hozonLogoSrc} alt="Hozon logo" height={65} />
-    </div>
+      <Icon
+        className="flex justify-center"
+        name={IconName.HOZON_LOGO}
+        size={IconSize.XXXL} />
   );
 
   const LoginSubmitBtn = () => (

@@ -18,6 +18,8 @@ export enum IconSize {
     LARGE = 8,
     XL = 10,
     XXL = 12,
+    XXXL = 24,
+    JUMBO = 48,
 }
 
 export enum IconAppearance {
@@ -26,5 +28,16 @@ export enum IconAppearance {
 }
 
 export enum IconName {
+    HOZON_LOGO = 'hozon-logo',
     ROCKET_LAUNCH = 'rocket-launch',
+}
+
+export enum InputType {
+    EMAIL = 'email',
+    FILE = 'file',
+    HIDDEN = 'hidden',
+    NUMBER = 'number',
+    PASSWORD = 'password',
+    PHONE = 'tel',
+    TEXT = 'text',
 }

@@ -11,7 +11,7 @@ interface props {
 }
 
 
-const RocketLunchIcon: FC<props> = ({
+const RocketLaunchIcon: FC<props> = ({
     appearance,
     size,
 }) => (
@@ -33,6 +33,6 @@ const RocketLunchIcon: FC<props> = ({
             </svg>
 )
 
-export default RocketLunchIcon;
+export default RocketLaunchIcon;
 
 
