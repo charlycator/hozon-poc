@@ -22,6 +22,7 @@
       "@/*": ["./src/*"],
       "@components": ["./src/components/"],
       "@enums": ["./src/lib/enums"],
+      "@images/*": ["./src/assets/images/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
