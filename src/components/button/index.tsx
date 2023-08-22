@@ -9,7 +9,7 @@ import {
 interface props {
     className?: string,
     children: ReactNode,
-    onClick: MouseEventHandler,
+    onClick: Function,
     size?: ButtonSize,
     type?: ButtonType
 }
@@ -21,6 +21,12 @@ const Button: FC<props> = ({
     size = ButtonSize.REGULAR,
     type = ButtonType.PRIMARY,
 }) => {
+
+    const onClickButton = (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
+        onClick(e);
+    }
+    
     return (
         <button
             className={`hoz-button-primary mt-16 px-4 py-2 rounded text-white font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-rose-500 focus:ring-opacity-80 cursor-pointer ${className}`}

@@ -32,7 +32,7 @@ body {
 }
 
 .hoz-login-form {
-  max-height: 350px;
+  height: 350px;
   max-width: 400px;
   box-shadow: 5px 5px 5px rgb(64 64 155);
 }
@@ -43,4 +43,11 @@ body {
 
 .hoz-button-primary:hover {
   background: rgb(78, 78, 207);
+}
+
+.hoz-input-not-valid-msg {
+  color: red;
+  opacity: 0.6;
+  float: right;
+  height: 25px;
 }
