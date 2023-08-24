@@ -25,7 +25,9 @@ const Icon: FC<AllIconProps> = ({
     size = IconSize.REGULAR,
 }) => {
     const getIcon = () => {
-        const DynamicComponent: ComponentType<SingleIconProps> = (dynamic(() => import(`./${name}`), {
+        const DynamicComponent: ComponentType<SingleIconProps> = (
+            dynamic(() => import(`./${name}`),
+        {
             ssr: false,
         }));
 
